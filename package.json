@@ -1,0 +1,43 @@
+{
+  "name": "@breakspace/small-base",
+  "version": "1.0.0",
+  "description": "Pacote para criar uma base simples para rodar um bot privado e pequeno",
+  "publishConfig": {
+     "access": "public"
+  },
+  "main": "cjs/index.cjs",
+  "module": "mjs/index.mjs",
+  "exports": {
+    "import": {
+      "default": "./mjs/index.mjs"
+    },
+    "require": {
+      "default": "./cjs/index.cjs"
+    }
+  }, 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "discord-js"
+   ],
+  "author": "BreakSpaceOficial ",
+  "contributors": [
+    "BreakSpaceOficial"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreakSpaceOficial/breakspace-small-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BreakSpaceOficial/breakspace-small-base/issues"
+  },
+  "homepage": "https://github.com/BreakSpaceOficial/breakspace-small-base#readme"
+}
