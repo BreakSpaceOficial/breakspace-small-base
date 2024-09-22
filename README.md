@@ -10,11 +10,24 @@
 
 </div>
 
+## Como começar?
+isso vai gerar o package.json que caso não tenha
+```
+npm init -y
+```
+
 ## Como instalar?
 
 ```
-npm i @breakspace/small-base dotenv discord.js@14.15.3 --save
+npm i @breakspace/small-base dotenv discord.js@14.16.2 --save
 ```
+
+## Onde Colocar o Token?
+crie um arquivo na raiz do projeto chamado **.env** e coloque dentro dele o seguinte
+```
+Token= TokenAqui
+```
+Substitua o **TokenAqui** pelo o **token** do seu bot
 
 ## Como usar ?
 ```js
@@ -31,17 +44,19 @@ const client = new Client({
     // os partials já são passsados automaticamente
 })
 client.conectar(process.env.Token)
-
 ```
 ## Como utilizar o handler?
 ```js
 
 // isso ira ler os eventos dentro da pasta raiz (src/eventos)
-client.eventos("src/eventos")
-// isso ira ler os eventos dentro de uma pasta (src/events/pasta)
 client.eventos("src/eventos", { raiz: true })
+
+// isso ira ler os eventos dentro de uma pasta (src/events/pasta)
+client.eventos("src/eventos")
+
 // isso ira habilitar a pasta de comandos em slash
 client.slash("src/slash")
+
 // isso ira habilitar a pasta de comandos em prefix
 client.prefix("src/prefix")
 
@@ -57,7 +72,6 @@ client.registrar({ type: "global" })
 
 // para registrar por servidor(es)
 client.registrar({ type: "guild", guildsId: ["1234567890123456789"] })
-
 ```
 
 ## Como buscar os comandos em slash e prefix?
