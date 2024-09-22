@@ -48,7 +48,6 @@ export default class extends Client {
         }
     }
     async eventos(local, { raiz = false } = {}) {
-        console.log(raiz)
         if (!existsSync(local)) return folderExist("localFolder", local)
         const pastas = readdirSync(local)
         if (raiz) {
