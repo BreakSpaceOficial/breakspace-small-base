@@ -1,6 +1,6 @@
 {
   "name": "@breakspace/small-base",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Pacote para criar uma base simples para rodar um bot privado e pequeno",
   "publishConfig": {
      "access": "public"
